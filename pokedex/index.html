@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <title>Pokédex Detalhada</title>
+    <link rel="icon" type="image/png" href="pokebola.png">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <main class="pokedex">
+        <section class="pokedex-left">
+            <div class="pokedex-screen">
+                <div class="pokemon-info">
+                    <span class="pokemon-id"></span> - 
+                    <span class="pokemon-name"></span>
+                    <button class="sound-btn">🔊</button>
+                </div>
+
+                <img src="#" alt="pokemon" class="pokemon-image" style="display: none;">
+                
+                <div class="pokemon-types">
+                    </div>
+
+                <div class="pokemon-stats">
+                    </div>
+
+                <div class="loading-message">Carregando...</div>
+            </div>
+            <div class="pokedex-controls">
+                <button class="nav-btn" id="prev-btn">&lt;</button>
+
+                <form class="search-form">
+                    <input type="search" class="search-input" placeholder="Buscar por nome ou ID..." />
+                </form>
+
+                <button class="nav-btn" id="next-btn">&gt;</button>
+            </div>
+        </section>
+
+        <section class="pokedex-right">
+            <div id="pokemon-list">
+                </div>
+            <button id="load-more" class="load-more-btn">Carregar Mais</button>
+        </section>
+    </main>
+</body>
+</html>
